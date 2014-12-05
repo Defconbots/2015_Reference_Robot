@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -295,34 +295,6 @@
 </package>
 </packages>
 </library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="JST-3-PTH">
-<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="6" width="0.2032" layer="21"/>
-<wire x1="-3.95" y1="6" x2="3.95" y2="6" width="0.2032" layer="21"/>
-<wire x1="3.95" y1="6" x2="3.95" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-2" y="0" drill="0.7" diameter="1.6256"/>
-<pad name="2" x="0" y="0" drill="0.7" diameter="1.6256"/>
-<pad name="3" x="2" y="0" drill="0.7" diameter="1.6256"/>
-<text x="-1.27" y="5.24" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.27" y="3.97" size="0.4064" layer="27">&gt;Value</text>
-<text x="-2.4" y="0.67" size="1.27" layer="51">+</text>
-<text x="-0.4" y="0.67" size="1.27" layer="51">-</text>
-<text x="1.7" y="0.87" size="0.8" layer="51">S</text>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Passives">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
@@ -429,6 +401,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-0.4688" y="0" curve="-247.473915"/>
 <vertex x="0.1794" y="-0.4331"/>
 </polygon>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SCREWTERMINAL-3.5MM-3">
+<wire x1="-2.3" y1="3.4" x2="9.3" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="9.3" y1="3.4" x2="9.3" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="9.3" y1="-2.8" x2="9.3" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="9.3" y1="-3.6" x2="-2.3" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="-3.6" x2="-2.3" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="-2.8" x2="-2.3" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="9.3" y1="-2.8" x2="-2.3" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="-1.35" x2="-2.7" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.7" y1="-1.35" x2="-2.7" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.7" y1="-2.35" x2="-2.3" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="9.3" y1="3.15" x2="9.7" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="9.7" y1="3.15" x2="9.7" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="9.7" y1="2.15" x2="9.3" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.413" shape="square"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.413"/>
+<pad name="3" x="7" y="0" drill="1.2" diameter="2.413"/>
+<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -625,10 +628,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="IC1" library="SparkFun" package="SSOP28DB" value="895-FT232RL" x="12.7" y="6.35" smashed="yes" rot="R180">
 <attribute name="VALUE" x="16.51" y="6.35" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="JST-3-PTH" value="" x="32.004" y="6.35" smashed="yes" rot="R270">
-<attribute name="SKU" value="PRT-09915" x="32.004" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="35.974" y="7.62" size="0.4064" layer="27" rot="R270"/>
-</element>
 <element name="C3" library="SparkFun-Passives" package="0603-CAP" value="C1608X5R1C106M080AB" x="20.193" y="4.826" smashed="yes" rot="R270">
 <attribute name="VALUE" x="19.05" y="5.842" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -646,6 +645,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="24.13" y="2.667" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="28.448" y="9.906"/>
+<element name="JP1" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-3" value="651-5442251" x="34.163" y="2.8702" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -664,7 +664,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="C3" pad="2"/>
 <contactref element="C6" pad="2"/>
 <contactref element="C4" pad="2"/>
-<contactref element="JP1" pad="3"/>
 <polygon width="0.254" layer="1">
 <vertex x="-0.254" y="13.716"/>
 <vertex x="38.862" y="13.716"/>
@@ -701,6 +700,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="25.908" y="11.43" extent="1-16" drill="0.4064"/>
 <via x="14.224" y="7.112" extent="1-16" drill="0.4064"/>
 <via x="16.002" y="7.112" extent="1-16" drill="0.4064"/>
+<contactref element="JP1" pad="3"/>
 <wire x1="12.375" y1="2.694" x2="10.425" y2="2.694" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D-">
@@ -755,12 +755,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="TXD">
 <contactref element="IC1" pad="1"/>
+<wire x1="16.925" y1="10.006" x2="29.618" y2="10.006" width="0.254" layer="1"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="33.428" y1="10.006" x2="34.544" y2="8.89" width="0.254" layer="1"/>
-<wire x1="34.544" y1="8.89" x2="34.544" y2="7.366" width="0.254" layer="1"/>
-<wire x1="34.544" y1="7.366" x2="33.528" y2="6.35" width="0.254" layer="1"/>
-<wire x1="33.528" y1="6.35" x2="32.004" y2="6.35" width="0.254" layer="1"/>
-<wire x1="16.925" y1="10.006" x2="33.428" y2="10.006" width="0.254" layer="1"/>
+<wire x1="29.618" y1="10.006" x2="33.2538" y2="6.3702" width="0.254" layer="1"/>
+<wire x1="33.2538" y1="6.3702" x2="34.163" y2="6.3702" width="0.254" layer="1"/>
 </signal>
 <signal name="LASER_EN">
 <contactref element="IC1" pad="3"/>
@@ -773,16 +771,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="+3V">
 <contactref element="C4" pad="1"/>
-<contactref element="JP1" pad="1"/>
 <contactref element="IC2" pad="3"/>
 <wire x1="23.0329" y1="6.0256" x2="24.0596" y2="6.0256" width="0.254" layer="1"/>
 <wire x1="24.0596" y1="6.0256" x2="24.384" y2="6.35" width="0.254" layer="1"/>
 <wire x1="24.384" y1="6.35" x2="24.384" y2="7.874" width="0.254" layer="1"/>
 <wire x1="24.384" y1="7.874" x2="24.892" y2="8.382" width="0.254" layer="1"/>
-<wire x1="24.892" y1="8.382" x2="31.972" y2="8.382" width="0.254" layer="1"/>
-<wire x1="31.972" y1="8.382" x2="32.004" y2="8.35" width="0.254" layer="1"/>
+<wire x1="24.892" y1="8.382" x2="29.7688" y2="8.382" width="0.254" layer="1"/>
 <wire x1="23.0329" y1="6.0256" x2="21.8126" y2="6.0256" width="0.254" layer="1"/>
 <wire x1="21.8126" y1="6.0256" x2="21.463" y2="5.676" width="0.254" layer="1"/>
+<contactref element="JP1" pad="1"/>
+<wire x1="29.7688" y1="8.382" x2="31.2928" y2="6.858" width="0.254" layer="1"/>
+<wire x1="31.2928" y1="6.858" x2="31.2928" y2="3.7846" width="0.254" layer="1"/>
+<wire x1="31.2928" y1="3.7846" x2="32.2072" y2="2.8702" width="0.254" layer="1"/>
+<wire x1="32.2072" y1="2.8702" x2="34.163" y2="2.8702" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IC2" pad="4"/>
