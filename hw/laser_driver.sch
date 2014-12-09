@@ -6062,7 +6062,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="C1608X5R1C106M080AB"/>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="C1608X5R1C106M080AB"/>
 <part name="IC2" library="v-reg-micrel" deviceset="MIC5219BMM" device="" value="998-MIC5209-3.0YM"/>
-<part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="C1608X5R1C106M080AB"/>
+<part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="VJ0603A471KXQPW1BC"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>

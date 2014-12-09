@@ -6,4 +6,5 @@
 |IC1             |1       |895-FT232RL         |Mouser     |
 |X1              |1       |798-ZX62RD-AB-5P8   |Mouser     |
 |IC2             |1       |998-MIC5209-3.0YM   |Mouser     |
-|C1,C2,C3,C4,C6  |5       |C1608X5R1C106M080AB |Mouser     |
+|C1,C2,C3,C4     |4       |C1608X5R1C106M080AB |Mouser     |
+|C6              |1       |VJ0603A471KXQPW1BC  |Mouser     |

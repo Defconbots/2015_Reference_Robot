@@ -1883,7 +1883,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="OC_FARNELL" value="unknown" x="37.084" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="22.606" y="3.048" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C6" library="SparkFun-Passives" package="0603-CAP" value="C1608X5R1C106M080AB" x="25.146" y="3.81" smashed="yes">
+<element name="C6" library="SparkFun-Passives" package="0603-CAP" value="VJ0603A471KXQPW1BC" x="25.146" y="3.81" smashed="yes">
 <attribute name="VALUE" x="24.13" y="2.667" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="28.448" y="9.906"/>
