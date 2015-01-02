@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -18,24 +18,24 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -65,7 +65,7 @@
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="114" name="Route14" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="Route15" color="7" fill="1" visible="no" active="no"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -1876,7 +1876,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="C4" library="SparkFun-Passives" package="0603-CAP" value="C1608X5R1C106M080AB" x="21.463" y="4.826" smashed="yes" rot="R270">
 <attribute name="VALUE" x="20.32" y="5.842" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="IC2" library="v-reg-micrel" package="MSOP08" value="998-MIC5209-3.0YM" x="25.146" y="6.35" smashed="yes" rot="R270">
+<element name="IC2" library="v-reg-micrel" package="MSOP08" value="998-MIC5219-3.0YMM" x="25.146" y="6.35" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="76C0464" x="37.084" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MIC5219BMM" x="37.084" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="ALTERA CORPORATION" x="37.084" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1945,7 +1945,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="14.224" y="7.112" extent="1-16" drill="0.4064"/>
 <via x="16.002" y="7.112" extent="1-16" drill="0.4064"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="12.375" y1="2.694" x2="10.425" y2="2.694" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D-">
 <contactref element="X1" pad="D-"/>
@@ -1967,11 +1966,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="IC1" pad="4"/>
 <wire x1="9.818" y1="1.016" x2="9.775" y2="1.059" width="0.254" layer="1"/>
 <wire x1="9.775" y1="1.059" x2="9.775" y2="2.694" width="0.254" layer="1"/>
-<wire x1="9.775" y1="2.694" x2="9.775" y2="3.679" width="0.254" layer="1"/>
-<wire x1="9.775" y1="3.679" x2="10.414" y2="4.318" width="0.254" layer="1"/>
-<via x="10.414" y="4.318" extent="1-16" drill="0.4064"/>
-<wire x1="10.414" y1="4.318" x2="11.684" y2="5.588" width="0.254" layer="16"/>
-<wire x1="11.684" y1="5.588" x2="11.684" y2="7.874" width="0.254" layer="16"/>
+<wire x1="9.775" y1="2.694" x2="9.775" y2="3.933" width="0.254" layer="1"/>
+<wire x1="9.775" y1="3.933" x2="10.414" y2="4.572" width="0.254" layer="1"/>
+<via x="10.414" y="4.572" extent="1-16" drill="0.4064"/>
+<wire x1="10.414" y1="4.572" x2="11.684" y2="5.715" width="0.254" layer="16"/>
+<wire x1="11.684" y1="5.715" x2="11.684" y2="7.874" width="0.254" layer="16"/>
 <wire x1="11.684" y1="7.874" x2="12.573" y2="8.763" width="0.254" layer="16"/>
 <wire x1="12.573" y1="8.763" x2="14.986" y2="8.763" width="0.254" layer="16"/>
 <via x="14.986" y="8.763" extent="1-16" drill="0.4064"/>
