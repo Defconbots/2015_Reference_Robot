@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -10116,8 +10116,8 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <smd name="62" x="-2.75" y="5.6" dx="1" dy="0.27" layer="1" rot="R90"/>
 <smd name="63" x="-3.25" y="5.6" dx="1" dy="0.27" layer="1" rot="R90"/>
 <smd name="64" x="-3.75" y="5.6" dx="1" dy="0.27" layer="1" rot="R90"/>
-<text x="-3.1" y="0.3" size="1.27" layer="21" ratio="12">&gt;NAME</text>
-<text x="-3.2" y="-1.4" size="1.27" layer="21" ratio="12">&gt;VALUE</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="-5.08" y="-8.89" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -11160,6 +11160,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="0.1U" library="rcl" deviceset="C-EU" device="C0603K"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11180,7 +11182,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="98.044" y="226.314" size="1.778" layer="95"/>
 <attribute name="VALUE" x="92.71" y="220.98" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+8" gate="G$1" x="119.38" y="182.88"/>
+<instance part="P+8" gate="G$1" x="99.06" y="182.88"/>
 <instance part="GND18" gate="1" x="111.76" y="165.1"/>
 <instance part="GND12" gate="1" x="85.09" y="137.16"/>
 <instance part="P+7" gate="G$1" x="96.52" y="142.24" rot="R90"/>
@@ -11286,6 +11288,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY4" gate="G$1" x="76.2" y="170.18"/>
 <instance part="SUPPLY2" gate="G$1" x="30.48" y="48.26"/>
 <instance part="SUPPLY3" gate="G$1" x="30.48" y="2.54"/>
+<instance part="0.1U" gate="G$1" x="99.06" y="180.34"/>
+<instance part="GND24" gate="1" x="99.06" y="172.72"/>
 </instances>
 <busses>
 </busses>
@@ -11459,12 +11463,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="167.64" y="78.74"/>
 <junction x="170.18" y="78.74"/>
 </segment>
+<segment>
+<pinref part="0.1U" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="1">
 <segment>
-<wire x1="127" y1="182.88" x2="119.38" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="127" y1="182.88" x2="99.06" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
 <pinref part="U3" gate="G$1" pin="VREGIN"/>
+<pinref part="0.1U" gate="G$1" pin="1"/>
+<junction x="99.06" y="182.88"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="142.24" x2="102.87" y2="142.24" width="0.1524" layer="91"/>
