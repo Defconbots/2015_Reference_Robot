@@ -25,7 +25,7 @@ namespace TowerDefender
         FilterInfoCollection videoDevices;
         private LaserController _controller;
         FrameProcessor processor;
-        FTDI _laser;
+        static FTDI _laser;
         GamePadState _gp;
 
         public Form1()
@@ -154,7 +154,7 @@ namespace TowerDefender
         private static void SendMessage()
         {
             _laser.SetRTS(false);
-            Thread.Sleep(250);
+            Thread.Sleep(300);
             uint dummy = 0;
             string msg = "[*I05]";
             _laser.Write(msg, msg.Length, ref dummy);
@@ -162,7 +162,7 @@ namespace TowerDefender
             _laser.Write(msg, msg.Length, ref dummy);
             Thread.Sleep(100);
             _laser.Write(msg, msg.Length, ref dummy);
-            Thread.Sleep(750);
+            Thread.Sleep(100);
             _laser.SetRTS(true);
             //_controller.Update(0, 0, true);
         }
@@ -179,16 +179,13 @@ namespace TowerDefender
             _controller.AbsPosition(100, 100);
         }
 
-        private Thread SendMessageThread = new Thread(SendMessage);
         private void gamepad_poll_Tick(object sender, EventArgs e)
         {
             _gp = GamePad.GetState(0);
             if (_gp.Buttons.A == Input.ButtonState.Pressed || _gp.Buttons.RightShoulder == Input.ButtonState.Pressed)
             {
-                if (!SendMessageThread.IsAlive)
-                {
-                    SendMessageThread.Start();
-                }
+                Thread SendMessageThread = new Thread(new ThreadStart(SendMessage));
+                SendMessageThread.Start();
             }
             if (_controller.isOpen)
             {
