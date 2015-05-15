@@ -42,6 +42,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.gamepad_poll = new System.Windows.Forms.Timer(this.components);
+            this.score_timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,8 +174,12 @@
             // gamepad_poll
             // 
             this.gamepad_poll.Enabled = true;
-            this.gamepad_poll.Interval = 50;
             this.gamepad_poll.Tick += new System.EventHandler(this.gamepad_poll_Tick);
+            // 
+            // score_timer
+            // 
+            this.score_timer.Interval = 500;
+            this.score_timer.Tick += new System.EventHandler(this.score_timer_Tick);
             // 
             // Form1
             // 
@@ -218,6 +223,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Timer gamepad_poll;
+        private System.Windows.Forms.Timer score_timer;
     }
 }
 
