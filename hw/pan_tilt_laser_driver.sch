@@ -11400,7 +11400,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </class>
 </classes>
 <parts>
-<part name="X1" library="SparkFun" deviceset="USB" device="-MICROB" value="798-ZX62RD-AB-5P8"/>
+<part name="X1" library="SparkFun" deviceset="USB" device="-MICROB" value="538-47346-0001"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="SCREW" value="651-5442251"/>

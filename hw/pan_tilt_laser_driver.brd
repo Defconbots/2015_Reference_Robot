@@ -1799,7 +1799,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="SparkFun" package="USB-MICROB" value="798-ZX62RD-AB-5P8" x="72.263" y="14.5415" smashed="yes" rot="R90">
+<element name="X1" library="SparkFun" package="USB-MICROB" value="538-47346-0001" x="72.263" y="14.5415" smashed="yes" rot="R90">
 <attribute name="VALUE" x="75.438" y="12.6365" size="0.8128" layer="27" font="vector" ratio="12" rot="R90"/>
 </element>
 <element name="JP2" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-3" value="651-5442251" x="8.382" y="9.144" smashed="yes">
